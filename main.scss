@@ -4,7 +4,7 @@
 @import 'SASS/vendors/bootstrap';
 
 @import 'SASS/base/reset';
-@import 'SASS/base/typography';
+@import 'SASS/base/body';
 
 @import 'SASS/layout/navigation';
 @import 'SASS/layout/grid';
@@ -12,6 +12,7 @@
 @import 'SASS/layout/footer';
 @import 'SASS/layout/sidebar';
 @import 'SASS/layout/main';
+@import 'SASS/layout/flexbox';
 
 @import 'SASS/components/buttons';
 @import 'SASS/components/slider';

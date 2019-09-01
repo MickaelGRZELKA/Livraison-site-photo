@@ -2,16 +2,152 @@
   font-size: 10px;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  grid-template-columns: repeat(12 1fr);
-  grid-template-rows: repeat(100px auto);
+  background: url("./images/photo-template.jpg");
+  background-size: cover;
 }
 
-.headerindex {
-  background-color: red;
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+}
+
+li a:hover {
+  color: white;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
+}
+
+footer p {
+  width: calc(100% - 80px);
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.aside1 img {
+  width: 30vw;
+  margin-top: 10rem;
+  margin-left: 20rem;
+}
+
+main {
+  display: flex;
+}
+
+main .galerie {
+  display: flex;
+  justify-content: center;
+}
+
+.galerie {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+.galerie .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.galerie .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.galerie .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .galerie .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .galerie .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: block;
+  margin-right: 20rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+main table {
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 2rem;
+  margin-left: 50rem;
+}
+
+main td, tr {
+  border: 0.5rem solid black;
+  padding: 1.5rem;
+}
+
+ul {
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=style.css.map */
